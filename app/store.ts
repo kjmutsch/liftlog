@@ -1,10 +1,11 @@
-// app/store/index.ts
 import { configureStore } from '@reduxjs/toolkit';
-import exampleReducer from './slices';
+import counterReducer from './counterSlice';
+import themeReducer from './themeSlice';
 
 export const store = configureStore({
   reducer: {
-    example: exampleReducer,
+    counter: counterReducer,
+    theme: themeReducer,
   },
 });
 
