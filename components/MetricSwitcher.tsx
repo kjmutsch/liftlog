@@ -6,7 +6,8 @@ import { RootState } from '../app/store';
 import { useTheme } from './ThemeProvider';
 import ThemedText from './ThemedText';
 
-const ThemeSwitcher = () => {
+//** Switch from lbs to kg for everything */
+const MetricSwitcher = () => {
     const dispatch = useDispatch();
     const colors = useTheme();
     const theme = useSelector((state: RootState) => state.theme.theme);
@@ -37,4 +38,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ThemeSwitcher;
+export default MetricSwitcher;
