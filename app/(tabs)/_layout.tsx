@@ -24,11 +24,12 @@ export default function TabLayout() {
           position: Platform.OS === 'ios' ? 'absolute' : 'relative',
           height: 70,
           overflow: 'visible',
+          justifyContent: 'center', // Ensures items are vertically centered
+          paddingBottom: Platform.OS === 'ios' ? 10 : 5, // Adjust bottom padding for proper centering
         },
-        tabBarLabelStyle: {
-          fontSize: 12,
-          lineHeight: 20,
-        },
+        tabBarItemStyle: {
+          alignSelf: 'center', // Ensures items align properly in the middle
+        },        
       }}>
       <Tabs.Screen
         name="index"
