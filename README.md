@@ -10,10 +10,10 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-2. Start the app. Since it's node.js it's a different command than usual (usally would be npx expo start)
+2. Start the app
 
    ```bash
-    npx next dev
+    npx expo start or npm start
    ```
 
 In the output, you'll find options to open the app in a
